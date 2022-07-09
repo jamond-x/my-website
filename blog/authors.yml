@@ -1,6 +1,6 @@
 endi:
   name: Endilie Yacop Sucipto
-  title: Maintainer of Docusaurus
+  title: Maintainer of Docusaurus!
   url: https://github.com/endiliey
   image_url: https://github.com/endiliey.png
 
@@ -15,3 +15,8 @@ slorber:
   title: Docusaurus maintainer
   url: https://sebastienlorber.com
   image_url: https://github.com/slorber.png
+
+hueng:
+  name: 向兴强
+  title: 寻找自己
+  url: https://github.com/jamond-x
