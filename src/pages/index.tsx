@@ -27,7 +27,7 @@ function HomepageHeader() {
     //   </div>
     // </header>
     <div className={styles.box}>
-      <Svg className={styles.svg}></Svg>
+      {/* <Svg className={styles.svg}></Svg> */}
       <div className={styles.left}>向兴强的生活沉淀站</div>
     </div>
   );
