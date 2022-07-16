@@ -1,13 +1,13 @@
-import React from "react";
-import clsx from "clsx";
-import Link from "@docusaurus/Link";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import Layout from "@theme/Layout";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
+import React from 'react';
+import clsx from 'clsx';
+import Link from '@docusaurus/Link';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Layout from '@theme/Layout';
+import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
-import styles from "./index.module.css";
+import styles from './index.module.css';
 
-const Svg = require("@site/static/svg/undraw_trip_re_f724.svg").default;
+const Svg = require('@site/static/svg/undraw_trip_re_f724.svg').default;
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -27,7 +27,7 @@ function HomepageHeader() {
     //   </div>
     // </header>
     <div className={styles.box}>
-      <Svg className={styles.svg}></Svg>
+      {/* <Svg className={styles.svg}></Svg> */}
       <div className={styles.left}>向兴强的生活沉淀站</div>
     </div>
   );
@@ -38,7 +38,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      description='Description will go into a meta tag in <head />'
     >
       <HomepageHeader />
       <main>
