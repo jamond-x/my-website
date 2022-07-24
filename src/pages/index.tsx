@@ -28,6 +28,9 @@ function HomepageHeader() {
     // </header>
     <div className={styles.box}>
       {/* <Svg className={styles.svg}></Svg> */}
+      <div className={styles.slogan}>
+        大多数问题的答案不是布尔值，并不是True Or False
+      </div>
       <div className={styles.left}>向兴强的生活沉淀站</div>
     </div>
   );
