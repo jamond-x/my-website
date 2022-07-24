@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -10,6 +11,11 @@ import styles from './index.module.css';
 const Svg = require('@site/static/svg/undraw_trip_re_f724.svg').default;
 
 function HomepageHeader() {
+  const [width, setWidth] = useState(window.innerWidth);
+  window.onresize = () => {
+    setWidth(window.innerWidth);
+  };
+
   const { siteConfig } = useDocusaurusContext();
   return (
     // <header className={clsx("hero hero--primary", styles.heroBanner)}>
@@ -28,10 +34,18 @@ function HomepageHeader() {
     // </header>
     <div className={styles.box}>
       {/* <Svg className={styles.svg}></Svg> */}
-      <div className={styles.slogan}>
-        大多数问题的答案不是布尔值，并不是True Or False
-      </div>
-      <div className={styles.left}>向兴强的生活沉淀站</div>
+      {width > 1000 && (
+        <div className={styles.slogan}>
+          大多数问题的答案不是布尔值，并不是True Or False
+        </div>
+      )}
+      {width > 1000 ? (
+        <div className={styles.left} style={{ fontSize: 25 }}>
+          向兴强的生活沉淀站
+        </div>
+      ) : (
+        <div className={styles.left}>向兴强的生活沉淀站</div>
+      )}
     </div>
   );
 }
